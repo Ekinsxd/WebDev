@@ -1,20 +1,178 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS Grid Example</title>
-    <meta name="description" content="Our first page" />
-    <meta name="keywords" content="html tutorial template" />
-    <link rel="stylesheet" href="index.css" />
-  </head>
+    <head>
+        <title>CSS Grid Example</title>
+        <meta name="description" content="Our first page" />
+        <meta name="keywords" content="html tutorial template" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
 
-  <body>
-    <div class="container">
-      <div class="navBar">Navbar</div>
-      <div class="left panels">Left Panel</div>
-      <div class="main panels">Main Panel</div>
-      <div class="right panels">Right Panel</div>
-      <div class="status">Status Bar</div>
-      <div class="notif">Notification Bar</div>
-    </div>
-  </body>
+    <body>
+        <div class="container">
+            <div class="one">
+                <img src="./pic1.png" height="100px" />
+            </div>
+            <div class="two">
+                <h1>
+                    Ethan Tran |
+                    <img src="./pic2.png" height="20" /> 678-999-8212
+                </h1>
+            </div>
+            <div class="three">
+                <p>
+                    In order to create the grid, I split the rows into 4
+                    sections and the columns into 4 sections. Using the
+                    following css:
+                    <b>
+                        grid-template-columns: 3fr 1.5fr 4fr 1.5fr;
+                        grid-template-rows: 100px 1fr 1fr 100px;
+                    </b>
+                    I was albe to allow the left side to have 30% of the area
+                    and the right side to have 70% of the area. On the right
+                    side i split up the areas into the remaining 7/10ths of the
+                    area into 1.5, 4, and 1.5. This allowed me to have area 5
+                    and 6 be 15% of the area and area 4 and 7 allowed to occupy
+                    that 15% as well as the remaining 40% of the areaa. The tops
+                    and bottoms were trivial to implement.
+                    <br /><br />
+                    <b>Area 1</b> was simple, using a class on the html element,
+                    i allowed the element to occupy 100% of the area.
+                    <br /><br />
+                    <b>Area 2</b> was simple, only requiring text and a css
+                    element to limit the height of the image. <br /><br />
+                    <b>Area 3</b> is just text with headers and brs.
+                    <br /><br />
+                    <b>Area 4</b> is a table with table rows as chilren of the
+                    table, and table data as children of the table rows. The
+                    rows have alternating color by using tr:nth-child(odd) with
+                    the background set to some color.The hover effect was done
+                    in the same way, only selecting the tr subclass.
+                    <br /><br />
+                    <b>Area 5</b> is just an image with height and width set to
+                    100%. <br /><br />
+                    <b>Area 6</b> is an unordered list with the list items being
+                    links. the links are created with the a tag and the href
+                    attribute. <br /><br />
+                    <b>Area 7</b> is just a large p tag with random b, i, and
+                    code tags sprinkled in there. <br /><br />
+                    <b>Area 8</b> is just a tags with href attributes linking to
+                    other websites. The images are contained as children of the
+                    a tags to inherit the href attribute.
+                </p>
+            </div>
+            <div class="four">
+                <table>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Couse Number</th>
+                        <th>Semester Taken</th>
+                    </tr>
+                    <tr>
+                        <td>Moble App Dev</td>
+                        <td>357</td>
+                        <td>W23</td>
+                    </tr>
+                    <tr>
+                        <td>Web App Dev</td>
+                        <td>371</td>
+                        <td>W23</td>
+                    </tr>
+                    <tr>
+                        <td>Game Dev</td>
+                        <td>376</td>
+                        <td>W23</td>
+                    </tr>
+                    <tr>
+                        <td>Reflect, Connect, Engage</td>
+                        <td>100</td>
+                        <td>W23</td>
+                    </tr>
+                    <tr>
+                        <td>Applied AI</td>
+                        <td>365</td>
+                        <td>W22</td>
+                    </tr>
+                    <tr>
+                        <td>OS Concepts</td>
+                        <td>452</td>
+                        <td>W22</td>
+                    </tr>
+                    <tr>
+                        <td>Religion and Pop Culture</td>
+                        <td>340</td>
+                        <td>W22</td>
+                    </tr>
+                    <tr>
+                        <td>Senior Project</td>
+                        <td>467</td>
+                        <td>W22</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="five">
+                <img src="./amogus.jpg" />
+            </div>
+            <div class="six">
+                <ul>
+                    <li>
+                        <a href="http://ostusa.com">OST</a>
+                    </li>
+                    <li>
+                        <a href="http://facebook.com">FB</a>
+                    </li>
+                    <li>
+                        <a href="http://microsoft.com">MSFT</a>
+                    </li>
+                    <li>
+                        <a href="http://apple.com">APPL</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="seven">
+                <p>
+                    According to all known laws of <b>aviation</b>, there is no
+                    way a bee should be able to fly. Its wings are too small to
+                    get its fat little body off the ground. The bee, of course,
+                    flies anyway because bees don't care what humans think is
+                    impossible. In a world of constipation and diarrhea, it's
+                    okay to be a normal piece of shit sometimes.
+                    <b>118,000. - Bye! Barry, I told you,</b>
+                    stop flying in the house! - Hey, Adam. - Hey, Barry. - Is
+                    that fuzz gel? - A little. Special day, graduation. Wow. We
+                    know that you,
+                    <i>as a bee, have worked your whole</i> life to get to the
+                    point where you can work for your whole life. Honey begins
+                    when our valiant Pollen Jocks bring the nectar
+                    <code
+                        >to the hive. Our top-secret formula is automatically
+                        color-corrected, scent-adjusted and bubble-contoured
+                        into this soothing sweet</code
+                    >
+                    muhahaha bark bark
+                    <i>syrup with its distinctive golden glow you know as...</i>
+                    x = 5; y = 6; z = x + y;
+                </p>
+            </div>
+            <div class="eight">
+                <a href="https://www.linkedin.com/feed/"
+                    ><img src="linkedin.png" alt="linkedin"
+                /></a>
+                <a href="https://www.facebook.com/"
+                    ><img src="fb.png" alt="Facebook"
+                /></a>
+                <a href="https://www.twitter.com/"
+                    ><img src="twit.png" alt="Twitter"
+                /></a>
+                <a href="https://www.amazon.com/"
+                    ><img src="amz.jpg" alt="Amazon"
+                /></a>
+                <a href="https://www.github.com/"
+                    ><img src="gh.png" alt="Github"
+                /></a>
+                <a href="https://www.crunchyroll.com/"
+                    ><img src="cr.png" alt="CrunchyRoll"
+                /></a>
+            </div>
+        </div>
+    </body>
 </html>
